@@ -1,4 +1,5 @@
-﻿using pooling;
+﻿using System;
+using pooling;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,13 +11,18 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float jumpForce = 7f;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private LayerMask mapLayer;
+
+    private bool canMove = true;
 
     private Rigidbody2D rb;
     private float horizontal;
-    private BoxCollider2D boxCollider2D;
+    private Collider2D boxCollider2D;
+    
     private SpriteRenderer spriteRenderer;
     private float jumpTime = 1.185f;
     private float countTime = 0;
+    private bool canBackCheckPoint;
 
     [Space]
     [Header("Animation")]
@@ -24,20 +30,38 @@ public class PlayerController : MonoBehaviour
 
     [Space]
     [Header("Skill")]
-    [SerializeField] private GameObject checkPoint;
     private Vector3 checkPointPos;
     private bool isSettingPoint;
+
+    [SerializeField] private SpriteRenderer spriteCheckPointPrebfabs;
+    private SpriteRenderer spriteCheckPoint;
+    
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        boxCollider2D = GetComponent<BoxCollider2D>();
+        boxCollider2D = GetComponent<Collider2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         playerAnim = GetComponent<Animator>();
     }
 
     private void Update()
     {
+        if (isCheckMovePlay && (Input.GetAxisRaw("Horizontal") != 0 || Input.GetKeyDown(KeyCode.W)))
+        {
+            isCheckMovePlay = false;
+            CheckMovePlayer(true);
+        }
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            SetCheckPoint(); 
+        }
+        if (Input.GetKeyDown(KeyCode.V))
+        {
+            if(!canBackCheckPoint) return;
+            BackToCheckPoint();
+        }
+        if(!canMove) return;
         horizontal = Input.GetAxisRaw("Horizontal");
         playerAnim.SetFloat("Speed", Mathf.Abs(horizontal));
         playerAnim.SetBool("IsGround", CheckGround());
@@ -56,15 +80,13 @@ public class PlayerController : MonoBehaviour
         {
             countTime -= Time.deltaTime;
         }
+    }
 
-        if (Input.GetKeyDown(KeyCode.C))
-        {
-            SetCheckPoint();
-        }
-        if (Input.GetKeyDown(KeyCode.V))
-        {
-            BackToCheckPoint();
-        }
+    private void FixedUpdate()
+    {
+        CheckFly();
+        if(!canMove) return;
+        SetParentPlayer();
     }
 
     private void OnLanding()
@@ -102,30 +124,61 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void SetParentPlayer()
     {
-        if (collision.gameObject.CompareTag("Box"))
+        RaycastHit2D hit = Physics2D.CircleCast(transform.position, 0.3f, Vector2.down, 0f, mapLayer);
+        if (hit.collider != null) 
         {
-            Rigidbody2D pushObj = collision.gameObject.GetComponent<Rigidbody2D>();
-            if (pushObj != null)
-            {
-                pushObj.velocity = new Vector2(rb.velocity.x / 2f, pushObj.velocity.y * 0.5f);
-            }
+            this.transform.SetParent(hit.transform);
+        }
+    }
+    private bool isCheckMovePlay = false;
+    private void CheckFly()
+    {
+        RaycastHit2D[] hit2D = Physics2D.RaycastAll(transform.position, Vector2.down, 0.5f);
+        if (hit2D.Length >= 4)
+        {
+            CheckMovePlayer(false);
+            isCheckMovePlay = true;
         }
     }
 
+    public void CheckMovePlayer(bool enable)
+    {
+        if(isCheckMovePlay) return;
+        rb.velocity = Vector2.zero;
+        canMove = enable;
+        boxCollider2D.enabled = enable;
+        rb.bodyType = enable ? RigidbodyType2D.Dynamic : RigidbodyType2D.Kinematic;
+    }
     private void SetCheckPoint()
     {
         checkPointPos = transform.position;
         isSettingPoint = true;
-        checkPoint.gameObject.transform.position = checkPointPos;
-        checkPoint.GetComponent<SpriteRenderer>().color = new Color(1,1,1,0.5f);
+        spriteCheckPoint =
+            PoolingManager.Spawn(spriteCheckPointPrebfabs, transform.position, Quaternion.identity);
+        canBackCheckPoint = true;
     }
 
     private void BackToCheckPoint()
     {
+        if(!spriteCheckPoint.gameObject.activeSelf) return;
         this.transform.position = new Vector3(checkPointPos.x, checkPointPos.y + 0.5f, checkPointPos.z);
         isSettingPoint = false;
-        checkPoint.GetComponent<SpriteRenderer>().color = new Color(1,1,1, 0);
+        PoolingManager.Despawn(spriteCheckPoint.gameObject);
+        canBackCheckPoint = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Ground") && canBackCheckPoint && canMove)
+        {
+            canBackCheckPoint = false;
+        }
+
+        if (other.CompareTag("Finish"))
+        {
+            //GameController.instance.Win = true;
+        }
     }
 }

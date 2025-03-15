@@ -7,13 +7,16 @@ public class DragObjectManager : MonoBehaviour
 {
     public static DragObjectManager Instance;
     private DragItemObject currentItem;
+    private DragItemObject nearItem;
 
     public bool smartDrag = true;
     public bool isDraggable = true;
     public bool canDrag = true;
     private Vector2 initialPostionMouse;
     public Vector2 initialPositionObject;
+    public PlayerController player;
 
+    
     private void Awake()
     {
         Instance = this;
@@ -54,6 +57,7 @@ public class DragObjectManager : MonoBehaviour
                     currentItem = item;
                     currentItem.OnSelected();
                     initialPositionObject = currentItem.transform.localPosition;
+                    player.CheckMovePlayer(false);
                 }
             }
 
@@ -66,9 +70,7 @@ public class DragObjectManager : MonoBehaviour
         if(!isDraggable) return;
         if (!currentItem) return;
         transform.SetParent(transform.root);
-        /*
         Vector3 pos = Camera.main.ScreenToWorldPoint(position);
-        */
         if (isDraggable)
         {
             if (!smartDrag)
@@ -81,22 +83,34 @@ public class DragObjectManager : MonoBehaviour
                     initialPositionObject + (Vector2)MouseWorldPosition(Input.mousePosition) - initialPostionMouse;
             }
         }
-        /*RaycastHit2D hit = Physics2D.Raycast(pos, Vector2.down);
+        RaycastHit2D hit = Physics2D.Raycast(pos, Vector2.down);
         if (hit)
         {
             if (hit.transform.TryGetComponent(out DragItemObject item))
             {
-                /*SwapItem(currentItem, item);#1#
+                SwapItem(currentItem, item);
             }
-        }*/
+        }
     }
 
-    public void SwapItem(DragItemObject item1, DragItemObject item2)
+    public void SwapItem(DragItemObject item1, DragItemObject item2, bool auto = false)
     {
-        Transform tmpParent = item1.OriginParent;
+        if (auto)
+        {
+            if (Math.Abs(Vector2.Distance(item1.transform.position, item2.transform.position)) <= 0.75f)
+            {
+                Transform tmpParent = item1.OriginParent;
+                item1.OriginParent = item2.OriginParent;
+                item2.OriginParent = tmpParent;
+                item2.transform.SetParent(tmpParent);
+                item2.transform.localPosition = Vector2.zero;
+            }
+            return;
+        }
+        Transform obj = item1.OriginParent;
         item1.OriginParent = item2.OriginParent;
-        item2.OriginParent = tmpParent;
-        item2.transform.SetParent(tmpParent);
+        item2.OriginParent = obj;
+        item2.transform.SetParent(obj);
         item2.transform.localPosition = Vector2.zero;
     }
 
@@ -116,6 +130,7 @@ public class DragObjectManager : MonoBehaviour
         smartDrag = true;
         initialPositionObject = Vector2.zero;
         canDrag = true;
+        player.CheckMovePlayer(true);
         if (currentItem)
         {
             Vector3 pos = Camera.main.ScreenToWorldPoint(position);
