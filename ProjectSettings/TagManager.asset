@@ -5,7 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - DropArea
+<<<<<<< HEAD
+  - Box
+  - Ground
+=======
   - AutoSwap
+>>>>>>> 84158b7759d533412be121d113d5bd31bd8e3a0b
   layers:
   - Default
   - TransparentFX
@@ -13,7 +18,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Ground
   - 
   - 
   - 
