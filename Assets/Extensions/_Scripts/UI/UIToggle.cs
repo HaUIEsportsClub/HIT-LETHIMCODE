@@ -23,13 +23,13 @@ namespace _Scripts.UI
         {
             if (toggle.isOn)
             {
-                AudioManager.instance.PlaySoundToggleClickOn();
+                AudioManager.Instance.PlaySoundToggleClickOn();
                 switchHandle.transform.DOLocalMoveX(50, 0.3f).SetEase(Ease.OutSine).OnPlay(() => {
                     switchBackground.sprite = switchOn;
                 });
             } else
             {
-                AudioManager.instance.PlaySoundToggleClickOff();
+                AudioManager.Instance.PlaySoundToggleClickOff();
 
                 switchHandle.transform.DOLocalMoveX(-50, 0.3f).SetEase(Ease.OutSine).OnPlay(() =>
                 {

@@ -114,7 +114,7 @@ namespace _Scripts.UI
             if (IsMuteMusic == toggleMusic.isOn)
             {
                 IsMuteMusic = !IsMuteMusic;
-                AudioManager.instance.SetMuteMusic();
+                AudioManager.Instance.SetMuteMusic();
             }
         }
 
@@ -123,7 +123,7 @@ namespace _Scripts.UI
             if (IsMuteSound == toggleSound.isOn)
             {
                 IsMuteSound = !IsMuteSound;
-                AudioManager.instance.SetMuteSounds();
+                AudioManager.Instance.SetMuteSounds();
             }
         }
 

@@ -1,6 +1,5 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
+using Character;
 using UnityEngine;
 
 public class DragObjectManager : MonoBehaviour
@@ -14,7 +13,6 @@ public class DragObjectManager : MonoBehaviour
     public bool canDrag = true;
     private Vector2 initialPostionMouse;
     public Vector2 initialPositionObject;
-    public PlayerController player;
 
     
     private void Awake()
@@ -57,7 +55,7 @@ public class DragObjectManager : MonoBehaviour
                     currentItem = item;
                     currentItem.OnSelected();
                     initialPositionObject = currentItem.transform.localPosition;
-                    player.CheckMovePlayer(false);
+                    PlayerController.Instance.ToggleMovementState(false);
                 }
             }
 
@@ -88,7 +86,7 @@ public class DragObjectManager : MonoBehaviour
         {
             if (hit.transform.TryGetComponent(out DragItemObject item))
             {
-                SwapItem(currentItem, item);
+                SwapItem(currentItem, item, true);
             }
         }
     }
@@ -97,13 +95,15 @@ public class DragObjectManager : MonoBehaviour
     {
         if (auto)
         {
-            if (Math.Abs(Vector2.Distance(item1.transform.position, item2.transform.position)) <= 0.75f)
+            if (Math.Abs(Vector2.Distance(item1.transform.position, item2.transform.position)) <= 2f)
             {
                 Transform tmpParent = item1.OriginParent;
                 item1.OriginParent = item2.OriginParent;
                 item2.OriginParent = tmpParent;
+                item2.Collider2D.enabled = false;
                 item2.transform.SetParent(tmpParent);
                 item2.transform.localPosition = Vector2.zero;
+                item2.Collider2D.enabled = true;
             }
             return;
         }
@@ -130,7 +130,7 @@ public class DragObjectManager : MonoBehaviour
         smartDrag = true;
         initialPositionObject = Vector2.zero;
         canDrag = true;
-        player.CheckMovePlayer(true);
+        PlayerController.Instance.ToggleMovementState(true);
         if (currentItem)
         {
             Vector3 pos = Camera.main.ScreenToWorldPoint(position);

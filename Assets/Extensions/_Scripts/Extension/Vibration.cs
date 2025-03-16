@@ -115,7 +115,7 @@ namespace _Scripts.Extension
         {
             if (Application.isMobilePlatform)
             {
-                if (UI.UIController.instance.UISetting.IsOffVibration) return;
+                if (UI.UIController.Instance.UISetting.IsOffVibration) return;
 #if UNITY_IOS
                 _VibratePop ();
 #elif UNITY_ANDROID
@@ -130,7 +130,7 @@ namespace _Scripts.Extension
         {
             if (Application.isMobilePlatform)
             {
-                if (UI.UIController.instance.UISetting.IsOffVibration) return;
+                if (UI.UIController.Instance.UISetting.IsOffVibration) return;
 #if UNITY_IOS
                 _VibratePeek ();
 #elif UNITY_ANDROID
@@ -145,7 +145,7 @@ namespace _Scripts.Extension
         {
             if (Application.isMobilePlatform)
             {
-                if (UI.UIController.instance.UISetting.IsOffVibration) return;
+                if (UI.UIController.Instance.UISetting.IsOffVibration) return;
 #if UNITY_IOS
                 _VibrateNope ();
 #elif UNITY_ANDROID
