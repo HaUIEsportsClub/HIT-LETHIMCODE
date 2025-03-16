@@ -12,6 +12,7 @@ public class DragItemObject : MonoBehaviour
       get => originParent;
    }
    [SerializeField] private Collider2D collider;
+   public Collider2D Collider2D => collider;
    [SerializeField] private SortingGroup sort;
    
 #if UNITY_EDITOR
