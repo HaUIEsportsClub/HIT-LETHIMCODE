@@ -10,5 +10,5 @@ public class MapLevelManager : Singleton<MapLevelManager>
     }
 
     [SerializeField] private List<ButtonLevel> listBtn;
-    public List<ButtonLevel> ListBtn;
+    public List<ButtonLevel> ListBtn => listBtn;
 }

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6084717330810634968}
   - component: {fileID: 4678295250594863223}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tropics_entities (16 x 16)_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 353160863719179300}
   - component: {fileID: 2883101224618033001}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tropics_entities (16 x 16)_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,9 +182,9 @@ GameObject:
   - component: {fileID: 7035454980809183120}
   - component: {fileID: -8445454203108536663}
   - component: {fileID: -729506655700561159}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Summer_5
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

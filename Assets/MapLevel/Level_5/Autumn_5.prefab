@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: -7974869904805838597}
   - component: {fileID: -7666741603217678292}
   - component: {fileID: -5835594335341881415}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Autumn_5
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -739,6 +739,10 @@ PrefabInstance:
     - target: {fileID: 8628536440585329657, guid: d3c8362354bbe9647b2bf94248026acc, type: 3}
       propertyPath: m_Name
       value: Thu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628536440585329657, guid: d3c8362354bbe9647b2bf94248026acc, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

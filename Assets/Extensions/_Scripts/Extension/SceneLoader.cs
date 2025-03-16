@@ -84,9 +84,12 @@ namespace _Scripts.Extension
 
                 loading.DOValue(1f, timer).SetEase(Ease.Linear).OnComplete(delegate
                 {
-                    scene.allowSceneActivation = true;
+                    AnimationTranslate.Instance.StartLoading(delegate
+                    {
+                        AnimationTranslate.Instance.DisplayLoading(false);
+                        scene.allowSceneActivation = true;
+                    });
                 });
-
             }
         }
     }

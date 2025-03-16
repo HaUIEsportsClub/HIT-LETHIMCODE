@@ -1,5 +1,6 @@
 using System;
 using _Scripts.Extension;
+using Character;
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.UI;
@@ -101,30 +102,37 @@ namespace _Scripts.UI
             {
                 dime.gameObject.SetActive(true);
                 popup.gameObject.SetActive(true);
+                if (PlayerController.Instance != null)
+                {
+                    PlayerController.Instance.gameObject.SetActive(false);
+                }
             }
             else
             {
                 popup.Close(delegate { onClosed?.Invoke(); }, true);
                 dime._Close(true);
+                DOVirtual.DelayedCall(0.3f, delegate
+                {
+                    if (PlayerController.Instance != null)
+                    {
+                        PlayerController.Instance.gameObject.SetActive(true);
+                    }
+                });
             }
         }
 
         public void ButtonMusicClick()
         {
-            if (IsMuteMusic == toggleMusic.isOn)
-            {
-                IsMuteMusic = !IsMuteMusic;
-                AudioManager.Instance.SetMuteMusic();
-            }
+            AudioManager.Instance.PlaySoundButtonClick();
+            IsMuteMusic = !IsMuteMusic;
+            AudioManager.Instance.SetMuteMusic();
         }
 
         public void ButtonSoundClick()
         {
-            if (IsMuteSound == toggleSound.isOn)
-            {
-                IsMuteSound = !IsMuteSound;
-                AudioManager.Instance.SetMuteSounds();
-            }
+            AudioManager.Instance.PlaySoundButtonClick();
+            IsMuteSound = !IsMuteSound;
+            AudioManager.Instance.SetMuteSounds();
         }
 
         public void ButtonVibrationClick()
@@ -137,10 +145,17 @@ namespace _Scripts.UI
 
         public void OnButtonSettingClick()
         {
+            AudioManager.Instance.PlaySoundButtonClick();
             DisplaySetting(true);
         }
 
         public void OnButtonCloseClick()
+        {
+            AudioManager.Instance.PlaySoundButtonClick();
+            DisplaySetting(false);
+        }
+
+        public void InActive()
         {
             DisplaySetting(false);
         }

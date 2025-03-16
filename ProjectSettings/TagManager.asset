@@ -8,6 +8,7 @@ TagManager:
   - AutoSwap
   - Map
   - Ground
+  - Losse
   layers:
   - Default
   - TransparentFX
@@ -40,7 +41,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - MaxLayer
   m_SortingLayers:
   - name: Default
     uniqueID: 0
@@ -56,4 +57,7 @@ TagManager:
     locked: 0
   - name: Player
     uniqueID: 3177895227
+    locked: 0
+  - name: TOPLayer
+    uniqueID: 1223385897
     locked: 0

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6981674597754743867}
   - component: {fileID: 3736623402733519333}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tropics_entities (16 x 16)_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,9 +98,9 @@ GameObject:
   - component: {fileID: 2099474832578450312}
   - component: {fileID: 1798838409232155882}
   - component: {fileID: 4285147262274651627}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Summer 8
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -891,7 +891,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4459254233175397108}
   - component: {fileID: 1841543221817396139}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tropics_entities (16 x 16)_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -975,7 +975,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5268991574545838510}
   - component: {fileID: 142670168763431423}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Tropics_entities (16 x 16)_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1060,6 +1060,10 @@ PrefabInstance:
     - target: {fileID: 368926028258743338, guid: e18700a6e69cccb448df7d54f5b6bdbf, type: 3}
       propertyPath: m_Name
       value: Summer
+      objectReference: {fileID: 0}
+    - target: {fileID: 368926028258743338, guid: e18700a6e69cccb448df7d54f5b6bdbf, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6747741725900651771, guid: e18700a6e69cccb448df7d54f5b6bdbf, type: 3}
       propertyPath: m_LocalPosition.x

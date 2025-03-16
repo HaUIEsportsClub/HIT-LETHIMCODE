@@ -11,11 +11,16 @@ public class SpawnLevel : MonoBehaviour
     public void SpawmLevel(int index)
     {
         if(index > 8) return;
+        DestroyMap();
+        currentLevel = Instantiate(levels[index], transform.position, Quaternion.identity, transform);
+    }
+
+    public void DestroyMap()
+    {
         if (currentLevel != null)
         {
-            PoolingManager.Despawn(currentLevel.gameObject);
+            Destroy(currentLevel.gameObject);
             currentLevel = null;
         }
-        currentLevel = PoolingManager.Spawn(levels[index], transform.position, Quaternion.identity, transform);
     }
 }

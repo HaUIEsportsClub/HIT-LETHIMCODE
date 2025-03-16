@@ -2,7 +2,7 @@ using System;
 using DG.Tweening;
 using UnityEngine;
 
-public class AnimationTranslate : MonoBehaviour
+public class AnimationTranslate : Singleton<AnimationTranslate>
 {
     [SerializeField] private GameObject loading;
     [SerializeField] private SpriteMask spriteMask;
@@ -18,22 +18,6 @@ public class AnimationTranslate : MonoBehaviour
     }
 
     public bool IsActive { get; private set; } = false;
-
-    private void Awake()
-    {
-        float screenRatio = (float)Screen.width / (float)Screen.height;
-        float targetRatio = 10.8f / 19.2f;
-
-        if (screenRatio >= targetRatio)
-        {
-            loading.transform.localScale = Vector3.one;
-        }
-        else
-        {
-            float changeSize = targetRatio / screenRatio;
-            loading.transform.localScale = Vector3.one / changeSize;
-        }
-    }
     public void DisplayLoading(bool enable, Action onClosed = null)
     {
         if (enable)

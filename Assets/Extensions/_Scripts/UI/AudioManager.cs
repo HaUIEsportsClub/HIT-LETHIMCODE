@@ -48,15 +48,7 @@ namespace _Scripts
             SetMuteSounds();
             SetMuteMusic();
         }
-
-        public void PlaySoundConnect()
-        {
-            PlaySfx(soundConnect);
-        }
-        private bool IsAudioPlaying(AudioClip clip)
-        {
-            return soundSource.isPlaying && soundSource.clip == clip;
-        }
+        
         public void SetMuteSounds()
         {
             if (UI.UIController.Instance.UISetting.IsMuteSound)

@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: 8628414193914447389}
   - component: {fileID: 6479743863731916436}
   - component: {fileID: -8484664778696177995}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Winter_5
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -741,7 +741,7 @@ GameObject:
   m_Component:
   - component: {fileID: 713928898099866287}
   - component: {fileID: 4624781655899771139}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Snack_machine_Bench_Trash_bin (16 x 16)_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -825,7 +825,7 @@ GameObject:
   m_Component:
   - component: {fileID: 537837983774183845}
   - component: {fileID: 3632291199714036970}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Winter_entities (16 x 16)_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}

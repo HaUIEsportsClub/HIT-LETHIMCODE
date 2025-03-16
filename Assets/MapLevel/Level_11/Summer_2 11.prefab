@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: -7680163394303487754}
   - component: {fileID: -6731487618388685188}
   - component: {fileID: -1874192673740215280}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Summer_2 11
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -532,7 +532,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6179705262677025587}
   - component: {fileID: 6785093693852993559}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Extra_plants (16 x 16)_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -616,7 +616,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5377991441728433488}
   - component: {fileID: 7640122114065906738}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grassland_entities (16 x 16)_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -701,6 +701,10 @@ PrefabInstance:
     - target: {fileID: 368926028258743338, guid: e18700a6e69cccb448df7d54f5b6bdbf, type: 3}
       propertyPath: m_Name
       value: Summer
+      objectReference: {fileID: 0}
+    - target: {fileID: 368926028258743338, guid: e18700a6e69cccb448df7d54f5b6bdbf, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6747741725900651771, guid: e18700a6e69cccb448df7d54f5b6bdbf, type: 3}
       propertyPath: m_LocalPosition.x

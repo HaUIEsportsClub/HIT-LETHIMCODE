@@ -14,9 +14,9 @@ GameObject:
   - component: {fileID: -7273260364110822077}
   - component: {fileID: -3237652065322803271}
   - component: {fileID: 6370313382059905161}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Winter_2 15
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -458,7 +458,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6122372123181756733}
   - component: {fileID: 2047621638302804407}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Winter_entities (16 x 16)_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -542,7 +542,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2838142568936216166}
   - component: {fileID: 3563686086769694538}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Winter_entities (16 x 16)_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -667,6 +667,10 @@ PrefabInstance:
     - target: {fileID: 4421752777389381700, guid: a514490c0c83ec444b090ff3e7e42c39, type: 3}
       propertyPath: m_Name
       value: Dong
+      objectReference: {fileID: 0}
+    - target: {fileID: 4421752777389381700, guid: a514490c0c83ec444b090ff3e7e42c39, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

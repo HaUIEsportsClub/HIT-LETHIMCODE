@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7089284966095024841}
   - component: {fileID: 2317915058527368966}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grassland_entities (16 x 16)_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -98,9 +98,9 @@ GameObject:
   - component: {fileID: 6041307817544525801}
   - component: {fileID: 4233360035992101536}
   - component: {fileID: -1991146822673078192}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spring 8
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -868,7 +868,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4724507049292533406}
   - component: {fileID: 6616215220490276830}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grassland_entities (16 x 16)_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -993,6 +993,10 @@ PrefabInstance:
     - target: {fileID: 6145358368624922367, guid: c3e27e5fe38e3574fae020c3ceb58cb8, type: 3}
       propertyPath: m_Name
       value: Xuan
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145358368624922367, guid: c3e27e5fe38e3574fae020c3ceb58cb8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

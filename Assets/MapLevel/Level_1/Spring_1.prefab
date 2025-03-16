@@ -1157,6 +1157,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Xuan
       objectReference: {fileID: 0}
+    - target: {fileID: 6145358368624922367, guid: c3e27e5fe38e3574fae020c3ceb58cb8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -1,4 +1,6 @@
 using System;
+using _Scripts;
+using Character;
 using DG.Tweening;
 using UnityEngine;
 
@@ -22,7 +24,6 @@ public class GameController : Singleton<GameController>
    public StateGame State => state;
 
    [SerializeField] private SpawnLevel spawnLevel;
-   [SerializeField] private AnimationTranslate animLoading;
    private int level;
    public SpawnLevel SpawnLevel => spawnLevel;
 
@@ -41,49 +42,91 @@ public class GameController : Singleton<GameController>
          state = StateGame.ShowTutorial;
          return;
       }
-
+      AudioManager.Instance.StopMusic();
+      DOVirtual.DelayedCall(0.2f, delegate
+      {
+         AudioManager.Instance.PlayMusicBG();
+      });
       state = StateGame.WaitingChoiceLevel;
    }
-   public void PlayGame()
+   public void PlayGame(int indexLevel)
    {
-      animLoading.StartLoading(delegate
+      AnimationTranslate.Instance.StartLoading(delegate
       {
-         animLoading.DisplayLoading(false);
-         spawnLevel.SpawmLevel(level);
+         level = indexLevel;
+         AnimationTranslate.Instance.DisplayLoading(false);
+         spawnLevel.SpawmLevel(indexLevel - 1);
          state = StateGame.Playing;
          _Scripts.UI.UIController.Instance.UIInGame.ShowDisPlayGame();
+         AudioManager.Instance.StopMusic();
+         DOVirtual.DelayedCall(0.5f, delegate
+         {
+            AudioManager.Instance.PlayInGameMusic();
+         });
       });
    }
 
    public void BackHome()
    {
+      AudioManager.Instance.PlaySoundButtonClick();
       state = StateGame.WaitingChoiceLevel;
-      animLoading.StartLoading(delegate
+      _Scripts.UI.UIController.Instance.UIWin.DisplayWin(false, delegate
       {
-         animLoading.DisplayLoading(false);
-         _Scripts.UI.UIController.Instance.UIInGame.ShowDisplayHome();
+         AnimationTranslate.Instance.StartLoading(delegate
+         {
+            AnimationTranslate.Instance.DisplayLoading(false);
+            _Scripts.UI.UIController.Instance.UIInGame.ShowDisplayHome();
+            spawnLevel.DestroyMap();
+            AudioManager.Instance.StopMusic();
+            DOVirtual.DelayedCall(0.5f, delegate
+            {
+               AudioManager.Instance.PlayMusicBG();
+            });
+         });
       });
+     
    }
    public void NextLevel()
    {
-      level += 1;
+      AudioManager.Instance.PlaySoundButtonClick();
       state = StateGame.WaitingChoiceLevel;
-      animLoading.StartLoading(delegate
+      _Scripts.UI.UIController.Instance.UIWin.DisplayWin(false, delegate
       {
-         /*UIController.Instance.UIInGame.ShowDisplayHome();*/
-         MapLevelManager.Instance.ListBtn[level].IsLock = false;
-         spawnLevel.SpawmLevel(level);
-         animLoading.DisplayLoading(false);
+         AnimationTranslate.Instance.StartLoading(delegate
+         {
+            /*UIController.Instance.UIInGame.ShowDisplayHome();*/
+            spawnLevel.SpawmLevel(level - 1);
+            AnimationTranslate.Instance.DisplayLoading(false);
+            state = StateGame.Playing;
+         });
       });
    }
 
    public void Replay()
    {
-      animLoading.StartLoading(delegate
+      AudioManager.Instance.PlaySoundButtonClick();
+      _Scripts.UI.UIController.Instance.UIWin.DisplayWin(false, delegate
       {
-         animLoading.DisplayLoading(false);
-         spawnLevel.SpawmLevel(level);
+         AnimationTranslate.Instance.StartLoading(delegate
+         {
+            AnimationTranslate.Instance.DisplayLoading(false);
+            spawnLevel.SpawmLevel(level - 1);
+         });
       });
+      
+   }
+
+   public void Win()
+   {
+      state = StateGame.Win;
+      if (PlayerController.Instance != null)
+      {
+         PlayerController.Instance.gameObject.SetActive(false);
+      }
+      _Scripts.UI.UIController.Instance.UIWin.DisplayWin(true);
+      level += 1;
+      MapLevelManager.Instance.ListBtn[level].IsLock = true;
+      AudioManager.Instance.PlaySoundWin();
    }
    
 }

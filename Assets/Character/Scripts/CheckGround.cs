@@ -7,31 +7,39 @@ namespace Character
     {
         [SerializeField] private LayerMask groundLayer;
         private bool isGround;
+
+        private const float radiusCircle = 0.35f;
+
         public bool GroundChecked()
         {
-            RaycastHit2D hit = Physics2D.CircleCast(transform.position - Vector3.up * 0.1f, 0.1f, Vector2.down, 0f,groundLayer );
-            return hit.collider != null;
+            RaycastHit2D hit = Physics2D.CircleCast(transform.position, radiusCircle, Vector2.down, 0f,
+                groundLayer);
+
+            isGround = hit.collider != null;
+            return isGround;
             /*return isGround;*/
         }
 
 
         private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.CompareTag("Ground") && PlayerController.Instance.Skill.CanBackCheckPoint && PlayerController.Instance.CanMove)
+            if (other.CompareTag("Ground") && PlayerController.Instance.Skill.CanBackCheckPoint &&
+                PlayerController.Instance.CanMove)
             {
                 PlayerController.Instance.Skill.CanBackCheckPoint = false;
             }
 
             if (other.CompareTag("Finish"))
             {
-                //GameController.instance.Win = true;
+                GameController.Instance.Win();
             }
 
             if (other.CompareTag("Losse"))
             {
-                //Lo
+                GameController.Instance.Replay();
             }
         }
+
         public void PlayAnimFalling()
         {
             RaycastHit2D hit = Physics2D.CircleCast(transform.position, 0.1f, Vector2.down, 0f, groundLayer);
@@ -40,12 +48,12 @@ namespace Character
                 PlayerController.Instance.AnimationPlayer.PlayAnimIsFall();
             }
         }
+
         private void OnDrawGizmos()
         {
-            Gizmos.color = Color.red; 
-            Vector3 circleCenter = transform.position - Vector3.up * 0.1f;
-            float radius = 0.1f;
-            Gizmos.DrawWireSphere(circleCenter, radius);
+            Gizmos.color = Color.red;
+            Vector3 circleCenter = transform.position;
+            Gizmos.DrawWireSphere(circleCenter, radiusCircle);
         }
     }
 }

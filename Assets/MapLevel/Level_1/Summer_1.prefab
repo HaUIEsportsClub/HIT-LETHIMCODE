@@ -1167,6 +1167,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Summer
       objectReference: {fileID: 0}
+    - target: {fileID: 368926028258743338, guid: e18700a6e69cccb448df7d54f5b6bdbf, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6747741725900651771, guid: e18700a6e69cccb448df7d54f5b6bdbf, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

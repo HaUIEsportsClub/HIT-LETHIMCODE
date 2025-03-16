@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2783464915726023572}
   - component: {fileID: 7365385656768711309}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Autumn_entities (16 x 16)_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 442042899231084358}
   - component: {fileID: 3404601708164842818}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Autumn_entities (16 x 16)_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1492733411573114871}
   - component: {fileID: 8738484186160768769}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Autumn_entities (16 x 16)_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -266,9 +266,9 @@ GameObject:
   - component: {fileID: -4231854902438976019}
   - component: {fileID: 3631561873337682157}
   - component: {fileID: -1674534552717984170}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Autumn_3
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -905,6 +905,10 @@ PrefabInstance:
     - target: {fileID: 8628536440585329657, guid: d3c8362354bbe9647b2bf94248026acc, type: 3}
       propertyPath: m_Name
       value: Thu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8628536440585329657, guid: d3c8362354bbe9647b2bf94248026acc, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

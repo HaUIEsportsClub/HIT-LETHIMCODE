@@ -1,3 +1,4 @@
+using _Scripts;
 using UnityEngine;
 
 namespace Character
@@ -32,6 +33,7 @@ namespace Character
         public void Jump(float jumpForce)
         {
             rb.velocity = Vector2.up * jumpForce * Mathf.Sign(rb.gravityScale);
+            AudioManager.Instance.playSoundJump();
         }
     }
 }

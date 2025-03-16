@@ -26,15 +26,35 @@ public class ButtonLevel : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     public bool IsLock
     {
-        set => PlayerPrefs.SetInt("Level_" + level, value ? 1 : 0);
+        set
+        {
+            PlayerPrefs.SetInt("Level_" + level, value ? 1 : 0);
+            if (value)
+            {
+                ImageLock.SetActive(false);
+            }
+        }
         get => PlayerPrefs.GetInt("Level_" + level, 0) == 1;
     }
-    
+
+    public GameObject ImageLock;
+
+    private void Reset()
+    {
+        ImageLock = transform.GetChild(2).gameObject;
+    }
+
     private void Start()
     {
         if (!Lock)
         {
             IsLock = true;
+            ImageLock.SetActive(false);
+        }
+
+        if (IsLock)
+        {
+            ImageLock.SetActive(false);
         }
         button.onClick.AddListener(StartLevel);
     }
@@ -42,11 +62,12 @@ public class ButtonLevel : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     private void StartLevel()
     {
         if(!IsLock) return;
-        GameController.Instance.PlayGame();
+        GameController.Instance.PlayGame(level);
     }
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        if(!IsLock) return;
         transform.DOScale(scaleOnHover, scaleTransition).SetEase(scaleEase);
         DOTween.Kill(2, true);
         transform.DOPunchRotation(Vector3.forward * hoverPunchAngle, hoverTransition, 20, 1).SetId(2);
@@ -54,6 +75,7 @@ public class ButtonLevel : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        if(!IsLock) return;
         DOTween.Kill(2, true);
         transform.DOScale(1, scaleTransition).SetEase(scaleEase);
         transform.DOPunchRotation(Vector3.forward * -hoverPunchAngle, hoverTransition, 20, 1).SetId(2);

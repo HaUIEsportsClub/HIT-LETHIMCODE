@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8079164824167593084}
   - component: {fileID: 3024484655081715900}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Snack_machine_Bench_Trash_bin (16 x 16)_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1050656715505947661}
   - component: {fileID: 6088887532163040235}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grassland_entities (16 x 16)_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,9 +182,9 @@ GameObject:
   - component: {fileID: 4666872098876488164}
   - component: {fileID: -6825809007334352335}
   - component: {fileID: 6290312228752064246}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Spring 6
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -850,7 +850,7 @@ GameObject:
   m_Component:
   - component: {fileID: 614092315605030297}
   - component: {fileID: 3607754284164147501}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Extra_plants (16 x 16)_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -975,6 +975,10 @@ PrefabInstance:
     - target: {fileID: 6145358368624922367, guid: c3e27e5fe38e3574fae020c3ceb58cb8, type: 3}
       propertyPath: m_Name
       value: Xuan
+      objectReference: {fileID: 0}
+    - target: {fileID: 6145358368624922367, guid: c3e27e5fe38e3574fae020c3ceb58cb8, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
