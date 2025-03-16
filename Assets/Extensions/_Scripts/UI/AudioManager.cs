@@ -28,6 +28,14 @@ namespace _Scripts
         [SerializeField] private AudioClip soundConnect;
         [SerializeField] private AudioClip soundWin;
         [SerializeField] private AudioClip soundFail;
+
+        [Space] [Header("Audio in GamePlay")] 
+        [SerializeField] private AudioClip slimeFall;
+        [SerializeField] private AudioClip slimeJump;
+        [SerializeField] private AudioClip slimeMoving;
+        [SerializeField] private AudioClip slimeGetItem;
+        [SerializeField] private AudioClip slimeUseSkill;
+        
         
         protected override void Awake()
         {
@@ -84,6 +92,7 @@ namespace _Scripts
         {
             PlaySfx(toggleClickOn);
             Vibration.Vibrate(28);
+            
         }
 
         public void PlaySoundToggleClickOff()
@@ -113,6 +122,7 @@ namespace _Scripts
                 }
             }
         }
+        
         public void PlayMusicBG()
         {
             if (!musicSource.isPlaying)
@@ -170,6 +180,27 @@ namespace _Scripts
                 }
 
             }
+        }
+
+        public void playSoundFall()
+        {
+            PlaySfx(slimeFall);
+        }public void playSoundJump()
+        {
+            PlaySfx(slimeJump);
+        }public void playSoundMoving()
+        {
+            PlaySfx(slimeMoving);
+        }
+
+        public void playSoundGetItem()
+        {
+            PlaySfx(slimeGetItem);
+        }
+
+        public void playSoundUseSkill()
+        {
+            PlaySfx(slimeUseSkill);
         }
     }
 }
