@@ -14880,7 +14880,7 @@ GameObject:
   - component: {fileID: 5782854031391319419}
   - component: {fileID: 2170022197738193812}
   m_Layer: 0
-  m_Name: Lever6
+  m_Name: Level_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
