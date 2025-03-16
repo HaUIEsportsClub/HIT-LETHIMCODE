@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Character
 {
-    public class PlayerController : Singleton<PlayerController>
+    public class PlayerController : MonoBehaviour
     {
         [Header("Requiement")] 
         [SerializeField]
@@ -52,10 +52,11 @@ namespace Character
         [Header("Setting Layer")] 
         [SerializeField]
         private LayerMask layerMap;
-        protected override void Awake()
+
+        public static PlayerController Instance;
+        private  void Awake()
         {
-            base.KeepAlive(false);
-            base.Awake();
+            Instance = this;
         }
         
         private void Update()

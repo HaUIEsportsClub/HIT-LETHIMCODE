@@ -26,6 +26,11 @@ namespace Character
             {
                 //GameController.instance.Win = true;
             }
+
+            if (other.CompareTag("Losse"))
+            {
+                //Lo
+            }
         }
         public void PlayAnimFalling()
         {
