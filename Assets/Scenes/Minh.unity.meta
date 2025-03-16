@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/MapLevel/Level_3/Autumm_3.prefab.meta
+guid: 4f1705c91087ccf49aecf094127acb08
+PrefabImporter:
+========
 guid: cc8a5b428d4fdbe48ba3bb6584374a71
 DefaultImporter:
+>>>>>>>> 34a6861e4d2c7288e6af59c6036f4496279014a0:Assets/Scenes/Minh.unity.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
