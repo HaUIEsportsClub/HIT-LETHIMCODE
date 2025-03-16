@@ -5,91 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e8fa25c-9edf-449e-bd1e-b902b05ff26b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Character/Scripts/ChangeColorPlayer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character/Scripts/ChangeColorPlayer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character/Scripts/CheckGround.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character/Scripts/CheckGround.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character/Scripts/PlayerAnimation.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character/Scripts/PlayerAnimation.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character/Scripts/PlayerMovement.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character/Scripts/PlayerMovement.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character/Scripts/SpecialSkill.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Character/Scripts/SpecialSkill.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HIT-LETHIMCODE/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HIT-LETHIMCODE/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/Game.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/Game.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/New.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/New/Animation.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/New/Animation/Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/New/Animation/Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/New/Animation/Run.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/New/Animation/Run.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/New/Animator.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/New/Animator/Player.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/New/Animator/Player.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/New/Basic Charakter Spritesheet.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/New/Basic Charakter Spritesheet.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/New/Item.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/New/Item.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/New/Scripts.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/New/Scripts/DragItem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/New/Scripts/DragItem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/New/Scripts/DragManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/New/Scripts/DragManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/New/gradienttrasperant.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/New/gradienttrasperant.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/_Scripts/Extension/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Extensions/_Scripts/Extension/Singleton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/_Scripts/Extension/Vibration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Extensions/_Scripts/Extension/Vibration.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Extensions/_Scripts/UI/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Extensions/_Scripts/UI/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/_Scripts/UI/UISetting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Extensions/_Scripts/UI/UISetting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/_Scripts/UI/UIToggle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Extensions/_Scripts/UI/UIToggle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_1.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_1/Autumn_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_1/Autumn_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_1/Spring_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_1/Spring_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_1/Summer_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_1/Summer_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_1/Winter_1.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_1/Winter_1.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_2.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_2/Autumn_2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_2/Autumn_2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_2/Spring_2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_2/Spring_2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_2/Summer_2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_2/Summer_2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_2/Winter_2.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_2/Winter_2.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_3.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_3/Autumn_3.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_3/Autumn_3.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_3/Spring_3.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_3/Spring_3.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_3/Summer_3.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_3/Summer_3.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_3/Winter_3.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_3/Winter_3.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_5̀̀̀̀.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_5̀̀̀̀/Autumn_5.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_5̀̀̀̀/Autumn_5.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_5̀̀̀̀/Spring_5.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_5̀̀̀̀/Spring_5.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_5̀̀̀̀/Summer_5.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_5̀̀̀̀/Summer_5.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_5̀̀̀̀/Winter_5.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Map/Level_5̀̀̀̀/Winter_5.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Duc.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Duc.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DragAndDrop/DragItemObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DragAndDrop/DragItemObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DragAndDrop/DragObjectManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DragAndDrop/DragObjectManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerController.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Duy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Duy.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,25 +38,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\tranh\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\tranh\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\tranh\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\DecompilerCache",
+      "C:\\Users\\ASUS\\AppData\\Roaming\\JetBrains\\Rider2024.1\\resharper-host\\SourcesCache",
+      "C:\\Users\\ASUS\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.50f1\Editor\Unity.exe" />
@@ -187,6 +105,7 @@
       <updated>1742004140757</updated>
       <workItem from="1742004142339" duration="1075000" />
       <workItem from="1742061933675" duration="13336000" />
+      <workItem from="1742107906017" duration="1514000" />
     </task>
     <servers />
   </component>
