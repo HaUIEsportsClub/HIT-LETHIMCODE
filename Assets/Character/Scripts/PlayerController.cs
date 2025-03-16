@@ -60,6 +60,7 @@ namespace Character
         
         private void Update()
         {
+            if(GameController.Instance.State != GameController.StateGame.Playing) return;
             if (isCheckMovePlay && (Input.GetAxisRaw("Horizontal") != 0 || Input.GetKeyDown(KeyCode.W)))
             {
                 isCheckMovePlay = false;

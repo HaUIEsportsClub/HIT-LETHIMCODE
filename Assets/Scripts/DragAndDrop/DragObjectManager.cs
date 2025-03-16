@@ -22,6 +22,7 @@ public class DragObjectManager : MonoBehaviour
 
     private void Update()
     {
+        if(GameController.Instance.State != GameController.StateGame.Playing) return;
         if (Input.GetMouseButtonDown(0))
         {
             OnBeginDrag(Input.mousePosition);

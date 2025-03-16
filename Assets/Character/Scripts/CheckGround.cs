@@ -9,7 +9,7 @@ namespace Character
         private bool isGround;
         public bool GroundChecked()
         {
-            RaycastHit2D hit = Physics2D.CircleCast(transform.position - Vector3.up * 0.1f, 0.1f, Vector2.down, groundLayer );
+            RaycastHit2D hit = Physics2D.CircleCast(transform.position - Vector3.up * 0.1f, 0.1f, Vector2.down, 0f,groundLayer );
             return hit.collider != null;
             /*return isGround;*/
         }

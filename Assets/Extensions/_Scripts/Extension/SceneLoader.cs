@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections;
 using System.Threading.Tasks;
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -10,10 +12,11 @@ namespace _Scripts.Extension
     public class SceneLoader : Singleton<SceneLoader>
     {
         [SerializeField] private Slider loading;
+        public float timer;
         
         private string sceneName
         {
-            get => PlayerPrefs.GetString("sceneName", "CreateTool");
+            get => PlayerPrefs.GetString("sceneName", "GamePlay");
             set => PlayerPrefs.SetString("sceneName", value);
         }
 
@@ -79,7 +82,7 @@ namespace _Scripts.Extension
             { 
                 scene.allowSceneActivation = false;
 
-                loading.DOValue(1f, 3f).SetEase(Ease.Linear).OnComplete(delegate
+                loading.DOValue(1f, timer).SetEase(Ease.Linear).OnComplete(delegate
                 {
                     scene.allowSceneActivation = true;
                 });
