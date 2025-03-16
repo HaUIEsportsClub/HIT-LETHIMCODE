@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e8fa25c-9edf-449e-bd1e-b902b05ff26b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.HIT-LETHIMCODE/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HIT-LETHIMCODE/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/_Scripts/UI/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Extensions/_Scripts/UI/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Duy.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Duy.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +103,7 @@
       <updated>1742004140757</updated>
       <workItem from="1742004142339" duration="1075000" />
       <workItem from="1742061933675" duration="13336000" />
-      <workItem from="1742107906017" duration="1514000" />
+      <workItem from="1742107906017" duration="2222000" />
     </task>
     <servers />
   </component>
