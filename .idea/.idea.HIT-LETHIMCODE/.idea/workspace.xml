@@ -5,127 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e8fa25c-9edf-449e-bd1e-b902b05ff26b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Animation.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/Effect.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/Effect/Teleport.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/Effect/Teleport/Idle.anim" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/Effect/Teleport/Idle.anim.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/Effect/Teleport/Teleport.controller" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Animation/Effect/Teleport/Teleport.controller.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Effect.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Effect/teleport1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Effect/teleport1.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Effect/teleport2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Effect/teleport2.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Effect/teleport3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Effect/teleport3.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Effect/teleport4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Effect/teleport4.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Effect/teleport5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Effect/teleport5.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Effect/teleport6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Effect/teleport6.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Effect/teleport7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Effect/teleport7.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Effect/teleport8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Assets/Effect/teleport8.png.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Teleport.prefab" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Prefabs/Teleport.prefab.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Duc 1.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Duc 1.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Duc.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Duc.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Duy.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Duy.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level_0.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level_0.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Loader.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Loader.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Minh.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Minh.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.HIT-LETHIMCODE/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.HIT-LETHIMCODE/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/Scripts/CheckGround.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/Scripts/CheckGround.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Character/Scripts/PlayerMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/Scripts/PlayerMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Character/Shaders/ToonyShader/GradModels_Toony.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Character/Shaders/ToonyShader/GradModels_Toony.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/_Scripts/Extension/SceneLoader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Extensions/_Scripts/Extension/SceneLoader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Extensions/_Scripts/UI/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Extensions/_Scripts/UI/AudioManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Extensions/_Scripts/UI/UISetting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Extensions/_Scripts/UI/UISetting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level_4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level_4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level_5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level_5.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level_6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level_6.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level_7.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level_7.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Levels/Level_8.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Levels/Level_8.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level 15/Autumn 15.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level 15/Autumn 15.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level 15/Autumn_2 15.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level 15/Autumn_2 15.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level 15/Spring 15.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level 15/Spring 15.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level 15/Summer 15.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level 15/Summer 15.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level 15/Winter 15.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level 15/Winter 15.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level 15/Winter_2 15.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level 15/Winter_2 15.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_1/Autumn_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_1/Autumn_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_1/Spring_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_1/Spring_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_1/Summer_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_1/Summer_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_1/Winter_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_1/Winter_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_11/Autumn 11.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_11/Autumn 11.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_11/Spring 11.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_11/Spring 11.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_11/Spring_2 11.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_11/Spring_2 11.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_11/Summer 11.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_11/Summer 11.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_11/Summer_2 11.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_11/Summer_2 11.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_11/Winter 11.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_11/Winter 11.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_2/Autumn_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_2/Autumn_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_2/Spring_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_2/Spring_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_2/Summer_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_2/Summer_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_2/Winter_2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_2/Winter_2.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_3/Autumn_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_3/Autumn_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_3/Spring_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_3/Spring_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_3/Summer_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_3/Summer_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_3/Winter_3.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_3/Winter_3.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_4/Autumn 4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_4/Autumn 4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_4/Spring 4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_4/Spring 4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_4/Summer 4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_4/Summer 4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_4/Winter 4.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_4/Winter 4.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_5/Autumn_5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_5/Autumn_5.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_5/Spring_5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_5/Spring_5.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_5/Summer_5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_5/Summer_5.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_5/Winter_5.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_5/Winter_5.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_6/Autumn 6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_6/Autumn 6.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_6/Spring 6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_6/Spring 6.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_6/Summer 6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_6/Summer 6.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_6/Winter 6.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_6/Winter 6.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_8/Autumn 8.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_8/Autumn 8.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_8/Spring 8.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_8/Spring 8.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_8/Summer 8.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_8/Summer 8.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MapLevel/Level_8/Winter 8.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MapLevel/Level_8/Winter 8.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scenes.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/Duc 1.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scenes/Duc 1.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/Duc.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scenes/Duc.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/Duy.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scenes/Duy.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/GamePlay.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scenes/GamePlay.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/Level_0.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scenes/Level_0.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/Loader.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scenes/Loader.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/Minh.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scenes/Minh.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Scenes/SampleScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Scenes/SampleScene.unity.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AnimationTranslate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AnimationTranslate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GamePlay.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/ButtonLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ButtonLevel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MapLevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MapLevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SpawnLevel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SpawnLevel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/UIWin.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/UIWin.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

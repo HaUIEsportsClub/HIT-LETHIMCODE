@@ -38,12 +38,6 @@ public class ButtonLevel : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
     }
 
     public GameObject ImageLock;
-
-    private void Reset()
-    {
-        ImageLock = transform.GetChild(2).gameObject;
-    }
-
     private void Start()
     {
         if (!Lock)

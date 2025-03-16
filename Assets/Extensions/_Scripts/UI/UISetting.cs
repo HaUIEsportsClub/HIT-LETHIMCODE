@@ -67,35 +67,7 @@ namespace _Scripts.UI
         private void Awake()
         {
             DOTween.SetTweensCapacity(500, 500);
-
-            if (IsMuteMusic)
-            {
-                toggleMusic.isOn = false;
-            }
-            else
-            {
-                toggleMusic.isOn = true;
-            }
-
-            if (IsMuteSound)
-            {
-                toggleSound.isOn = false;
-            }
-            else
-            {
-                toggleSound.isOn = true;
-            }
-
-            if (IsOffVibration)
-            {
-                toggleVibrate.isOn = false;
-            }
-            else
-            {
-                toggleVibrate.isOn = true;
-            }
         }
-
         public void DisplaySetting(bool enable, Action onClosed = null)
         {
             if (enable)

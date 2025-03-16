@@ -118,6 +118,7 @@ public class GameController : Singleton<GameController>
 
    public void Win()
    {
+      if(state == StateGame.Win) return;
       state = StateGame.Win;
       if (PlayerController.Instance != null)
       {
@@ -125,7 +126,7 @@ public class GameController : Singleton<GameController>
       }
       _Scripts.UI.UIController.Instance.UIWin.DisplayWin(true);
       level += 1;
-      MapLevelManager.Instance.ListBtn[level].IsLock = true;
+      MapLevelManager.Instance.ListBtn[level - 1].IsLock = true;
       AudioManager.Instance.PlaySoundWin();
    }
    
