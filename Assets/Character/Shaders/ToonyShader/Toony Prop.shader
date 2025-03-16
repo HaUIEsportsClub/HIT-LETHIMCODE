@@ -1,6 +1,6 @@
 // Made with Amplify Shader Editor
 // Available at the Unity Asset Store - http://u3d.as/y3X 
-Shader "Toony Studio/Toony Prop"
+Shader "Piloto Studio/Toony Prop"
 {
 	Properties
 	{
@@ -216,9 +216,6 @@ Shader "Toony Studio/Toony Prop"
 			ENDCG
 		}
 	}
-	CustomEditor "ASEMaterialInspector"
-	
-	
 }
 /*ASEBEGIN
 Version=18935
