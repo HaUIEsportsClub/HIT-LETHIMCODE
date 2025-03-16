@@ -317,9 +317,6 @@ Shader "Nokdef/UberFX"
 			ENDCG
 		}
 	}
-	CustomEditor "ASEMaterialInspector"
-	
-	
 }
 /*ASEBEGIN
 Version=18912

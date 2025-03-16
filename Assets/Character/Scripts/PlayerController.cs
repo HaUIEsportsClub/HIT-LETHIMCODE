@@ -74,7 +74,7 @@ namespace Character
                 animationPlayer.PlayAnimJump(false);
                 canJump = true;
             }
-            if (Input.GetKeyDown(KeyCode.W) && groundChecked.GroundChecked() && canJump)
+            if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)) && groundChecked.GroundChecked() && canJump)
             {
                 animationPlayer.PlayAnimJump(true);
                 movement.Jump(jumpForce);

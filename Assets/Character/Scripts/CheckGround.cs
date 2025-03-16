@@ -9,16 +9,9 @@ namespace Character
         private bool isGround;
         public bool GroundChecked()
         {
-            /*float extraHeight = 0.1f;
-            Vector2 boxSize = new Vector2(0.8f, 0.8f);
-            Vector2 origin = new Vector2(transform.position.x, transform.position.y - 0.5f);
-
-            RaycastHit2D hit = Physics2D.BoxCast(origin, boxSize, 0f, Vector2.down, extraHeight, groundLayer);
-
-            Debug.DrawRay(origin, Vector2.down * extraHeight, Color.red);
-
-            return hit.collider != null;*/
-            return isGround;
+            RaycastHit2D hit = Physics2D.CircleCast(transform.position - Vector3.up * 0.1f, 0.1f, Vector2.down, groundLayer );
+            return hit.collider != null;
+            /*return isGround;*/
         }
 
 
@@ -45,26 +38,9 @@ namespace Character
         private void OnDrawGizmos()
         {
             Gizmos.color = Color.red; 
-            Vector3 circleCenter = transform.position;
+            Vector3 circleCenter = transform.position - Vector3.up * 0.1f;
             float radius = 0.1f;
             Gizmos.DrawWireSphere(circleCenter, radius);
-        }
-
-
-        private void OnCollisionEnter2D(Collision2D other)
-        {
-            if (other.gameObject.CompareTag("Ground"))
-            {
-                isGround = true;
-            }
-        }
-
-        private void OnCollisionExit2D(Collision2D other)
-        {
-            if (other.gameObject.CompareTag("Ground"))
-            {
-                isGround = false;
-            }
         }
     }
 }
